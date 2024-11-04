@@ -1,3 +1,5 @@
+Segue o Roadmap das implementações feitas no projeto https://github.com/action-labs-br/al-carbon-calc-server e os motivos das alterações.
+
 # Alterações em DTOs
   ## CalculationResultDTO
      Substitui: CarbonCalculationResultDTO
