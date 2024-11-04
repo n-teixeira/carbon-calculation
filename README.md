@@ -1,9 +1,7 @@
 # Alterações em DTOs
   ## CalculationResultDTO
-    ### Substitui: 
-      CarbonCalculationResultDTO
-    ### Motivo: 
-      Para melhorar a clareza e a estrutura dos dados retornados, separando a emissão total e a quebra por tipo de emissão.
+     Substitui: CarbonCalculationResultDTO
+     Motivo: Para melhorar a clareza e a estrutura dos dados retornados, separando a emissão total e a quebra por tipo de emissão.
   ## UserInfoDTO
     Substitui: StartCalcRequestDTO
     Motivo: Para adicionar validações e garantir que os dados de entrada sejam corretos.
