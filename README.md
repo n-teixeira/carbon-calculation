@@ -57,29 +57,25 @@
     Atualizado: Para implementar os métodos startCalculation, updateCalculationInfo, e getResult.
     Motivo: Para fornecer endpoints para iniciar, atualizar e obter resultados de cálculos.
 # Padrões de Design Aplicados
-  ## Repository Pattern: Utilizado para abstrair o acesso ao banco de dados e fornecer uma interface consistente para operações de CRUD.
-  
-  ## Service Layer Pattern: Utilizado para centralizar a lógica de negócio e separar a lógica de negócio da lógica de apresentação.
-  
-  ## Strategy Pattern: Utilizado para definir uma família de algoritmos (cálculos de emissão) e torná-los intercambiáveis. Cada tipo de cálculo de 
-  emissão é uma estratégia diferente.
-  
+  ## Repository Pattern: 
+    Utilizado para abstrair o acesso ao banco de dados e fornecer uma interface consistente para operações de CRUD.
+  ## Service Layer Pattern: 
+    Utilizado para centralizar a lógica de negócio e separar a lógica de negócio da lógica de apresentação.
+  ## Strategy Pattern:
+    Utilizado para definir uma família de algoritmos (cálculos de emissão) e torná-los intercambiáveis. Cada tipo de cálculo de 
+    emissão é uma estratégia diferente.
 # Conceitos SOLID Aplicados
   ## Single Responsibility Principle (SRP):
     Cada classe tem uma única responsabilidade. Por exemplo, CarbonCalculatorService é responsável pela lógica de negócio, enquanto OpenRestController é 
     responsável pela lógica de apresentação.
-  
   ## Open/Closed Principle (OCP):
     As classes são abertas para extensão, mas fechadas para modificação. Por exemplo, a interface EmissionCalculator permite adicionar novos tipos de 
     cálculos de emissão sem modificar a lógica existente.
-  
   ## Liskov Substitution Principle (LSP):
     As subclasses devem ser substituíveis por suas superclasses. Por exemplo, qualquer implementação de EmissionCalculator pode ser usada onde 
     EmissionCalculator é esperado.
-  
   ## Interface Segregation Principle (ISP):
     As interfaces são específicas para os clientes que as usam. Por exemplo, EmissionCalculator é uma interface específica para cálculos de emissão.
-  
   ## Dependency Inversion Principle (DIP):
     As dependências são invertidas para que as classes de alto nível não dependam de classes de baixo nível. Por exemplo, CarbonCalculatorService depende 
     de EmissionCalculator, que é uma abstração.
